@@ -17,4 +17,18 @@ function print() {
   // - For every number divisible by 5 it prints a BANG!!
   // - Forevery number divisible for 3 and 5 it prints BOOM BANG!! 
   
-  
+  function blast(){
+    setInterval(() => {
+
+      for (let i = 0; i<=15; i++){
+
+        if (i % 5 === 0 && i % 3 === 0) console.log(i, "BOOM!! BANG!!")
+        else if (i % 3 === 0) console.log(i, "BOOM!!")
+        else if (i % 5 === 0) console.log(i, "BANG!!")
+      }
+      
+    }, 1 * 1000);
+
+  }
+
+  blast()
